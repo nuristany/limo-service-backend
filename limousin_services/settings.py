@@ -16,8 +16,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 
-
+DEBUG = True
 ALLOWED_HOSTS = []
+
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -43,6 +45,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000',
+    # Add other origins if needed
+]
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
@@ -50,7 +57,7 @@ REST_FRAMEWORK = {
     ),
 
         'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.permissions.AllowAny',
     ]
 }
 
