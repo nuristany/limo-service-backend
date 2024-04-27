@@ -5,6 +5,9 @@ from decouple import config
 SECRET_KEY = config('SECRET_KEY')
 
 
+DEBUG = config('DEBUG', default=True, cast=bool)
+
+
 # Code that relies on the configuration variables
 EMAIL_HOST = config('EMAIL_HOST')
 EMAIL_PORT = config('EMAIL_PORT', cast=int)
