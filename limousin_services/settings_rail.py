@@ -6,7 +6,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 
 
-
+ALLOWED_HOSTS = ['web-production-a0bb7.up.railway.app']  
 
 # Code that relies on the configuration variables
 # EMAIL_HOST = config('EMAIL_HOST')
