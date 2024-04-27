@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Contact Form Submission</title>
+</head>
+<body>
+    <h2>New Contact Form Submission</h2>
+    <p>A new contact form submission has been received:</p>
+    <ul>
+        <li>Name: {{ contact_data.name }}</li>
+        <li>Email: {{ contact_data.email }}</li>
+        <li>Phone: {{ contact_data.phone }}</li>
+        <li>Message: {{ contact_data.message }}</li>
+    </ul>
+    <p>Please check the admin panel for more details.</p>
+</body>
+</html>
