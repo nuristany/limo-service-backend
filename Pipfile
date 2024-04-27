@@ -10,6 +10,7 @@ django-rest-framework = "*"
 djoser = "*"
 djangorestframework-simplejwt = "*"
 gunicorn = "*"
+whitenoise = "*"
 
 [dev-packages]
 
